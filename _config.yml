@@ -6,6 +6,8 @@ baseurl: ""
 description: >
   Mantelio portfolio ir tinklaraštis
 
+favicon: favicon.png
+
 remote_theme: riggraz/no-style-please
 
 theme_config:
