@@ -15,6 +15,11 @@ theme_config:
   show_description: false # show blog description in home page
   lowercase_titles: true # show titles in lowercase in lists
 
+feed:
+  categories:
+    - lt
+    - en
+
 defaults:
   - scope:
       path: "en/"
@@ -40,6 +45,7 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 #  - jektex
 
 jektex:

@@ -19,6 +19,8 @@ lt:
           url: https://bsky.app/profile/mantelis.net
         - title: spotify
           url: https://open.spotify.com/user/lbev0rj8253oxbys0z3cyt0af
+    - title: rss
+      url: /feed/lt.xml
 en:
   entries:
     - title: info
@@ -40,3 +42,5 @@ en:
           url: https://bsky.app/profile/mantelis.net
         - title: spotify
           url: https://open.spotify.com/user/lbev0rj8253oxbys0z3cyt0af
+    - title: rss
+      url: /feed/en.xml
