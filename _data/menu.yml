@@ -1,0 +1,42 @@
+lt:
+  entries:
+    - title: info
+      entries:
+        - title: esu Mantelis
+        - title: plačiau apie mane rasite <a href='/lt/apie/mane'>čia</a>
+
+    - title: blog'as
+      post_list:
+        limit: 5
+      entries:
+        - title: visi įrašai
+          url: /lt/blog/
+    - title: soc. tinklai
+      entries:
+        - title: instagram
+          url: https://instagram.com/mantelis3000
+        - title: bluesky
+          url: https://bsky.app/profile/mantelis.net
+        - title: spotify
+          url: https://open.spotify.com/user/lbev0rj8253oxbys0z3cyt0af
+en:
+  entries:
+    - title: info
+      entries:
+        - title: i am Mantelis
+        - title: "you can read more about me <a href='/en/about/me'>here</a>"
+
+    - title: blog
+      post_list:
+        limit: 5
+      entries:
+        - title: all posts
+          url: /en/blog/
+    - title: social media
+      entries:
+        - title: instagram
+          url: https://instagram.com/mantelis3000
+        - title: bluesky
+          url: https://bsky.app/profile/mantelis.net
+        - title: spotify
+          url: https://open.spotify.com/user/lbev0rj8253oxbys0z3cyt0af

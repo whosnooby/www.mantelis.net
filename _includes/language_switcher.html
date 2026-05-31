@@ -1,0 +1,27 @@
+<div style="float: right; font-size: 0.9em;">
+  {%if page.language == "lt"%}
+    {%assign desired_language = "en"%}
+    {%assign code = "EN"%}
+    {%assign hover_text = "See this page in English"%}
+    {%assign hover_text_disabled = "This page is not available in English"%}
+  {%else%}
+    {%assign desired_language = "lt"%}
+    {%assign code = "LT"%}
+    {%assign hover_text = "Pamatyti šį puslapį lietuvių kalba"%}
+    {%assign hover_text_disabled = "Šio puslapio lietuvių kalba pamatyti negalima"%}
+  {%endif%}
+
+  {%if page.collection == "posts" %}
+    {%assign pages = site.posts%}
+  {%else%}
+    {%assign pages = site.pages%}
+  {%endif%}
+
+  {%assign similar_pages = pages | where: "identifier", page.identifier%}
+  {%assign desired_page = similar_pages | where: "language", desired_language | first%}
+  {%if desired_page%}
+    <a href="{{ desired_page.url }}" title="{{ hover_text }}">{{ code }}</a>
+  {%else%}
+    <a title="{{ hover_text_disabled }}" disabled>{{ code }}</a>
+  {%endif%}
+</div>

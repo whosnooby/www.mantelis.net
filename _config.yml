@@ -1,0 +1,51 @@
+title: mantelis.net
+author: Mantelis
+email: as@mantelis.net
+url: https://www.mantelis.net
+baseurl: ""
+description: >
+  Mantelio portfolio ir tinklaraštis
+
+remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
+  lowercase_titles: true # show titles in lowercase in lists
+
+defaults:
+  - scope:
+      path: "en/"
+    values:
+      language: en
+  - scope:
+      path: "en/_posts"
+    values:
+      layout: post
+      permalink: /en/blog/:title
+  - scope:
+      path: "lt/"
+    values:
+      language: lt
+  - scope:
+      path: "lt/_posts"
+    values:
+      layout: post
+      permalink: /lt/blog/:title
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+#  - jektex
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
