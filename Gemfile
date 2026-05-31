@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll"
+gem "jekyll", "~> 4.4.1"
+gem "liquid", "~> 4.0.4"
 gem "jekyll-seo-tag"
 
 gem "kramdown-parser-gfm"
